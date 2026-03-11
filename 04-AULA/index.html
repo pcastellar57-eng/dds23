@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <h1>Formulários - tipos de input</h1>
+
+    <!-- Input - coleta informações do usuário -->
+    <!-- <input type="text" -->
+
+    <!-- Tag que engloba os campos do formulário -->
+    <form action="" method="">
+        <fieldset>
+        <legend>Formulário de Login</legend>
+        <!-- legend - legenda para aquele trecho do formulário -->
+      <!-- label = texto para guiar o input -->
+      <!-- for =diz para qual input ele vai servir -->
+      <label for="caixa-nome">Nome:</label>
+      <!-- id - identificação única daquele elemento -->
+      <!-- name = usado para identificar o input quando o dado é enviado -->
+      <input
+        type="text"
+        id="caixa-nome"
+        name="caixa-nome"
+        placeholder="Digite seu nome completo"
+      />
+      <br />
+      <br />
+
+      <!-- Forma 2 - input dentro do label -->
+      <label>
+        Email:
+        <input
+          type="email"
+          name="caixa-email"
+          id="caixa-email"
+          placeholder="E-mail"
+        />
+      </label>
+      <br>      
+      <br>
+      <label for="caixa-senha"> Senha: </label>
+      <input
+        type="password"
+        id="caixa-senha"
+        name="caixa-senha"
+        placeholder="Senha suspeita"
+      />
+      <br>
+      <br>
+      <!-- Caixinha botão -->
+        <input type="submit" name="botao-login" value="Enviar" id="botao-login" />
+      </fieldset>
+    </form>
+
+    <br>
+    <br>
+
+    <!-- OUTROS INPUTS TOP -->
+    <!-- Datas -->
+    <fieldset>
+        <legend>Datas</legend>
+    <label for="caixa-data">Data:</label>
+     <input type="date" id="caixa-data" name="caixa-data" />
+    <input type="datetime-local" name="datetime-local" id="">
+        </fieldset> 
+    <br><br>
+    <h2>Telefone</h2>
+    <input type="tel" pattern="[0-9][3]--[0-9][5]-- [0-9][4]"
+     placeholder="(XX) XXXXX-XXXX" id="caixa-telefone" name="caixa-telefone" />
+     <br><br>
+     <h2>números</h2>
+     <input type="number" name="caixa-numeros" id="caixa-numeros" min="0" max="100" step="20" />
+        <br><br>
+
+        <h2>Barra</h2>
+        <label for="">Barra top:</label>
+        <input type="range" min="0" max="100" value="20" step="20">
+
+        <h2>Caixa de texto grande</h2>
+        <textarea name="caixa-texto" id="caixa-texto" placeholder="Biografia...">
+        </textarea>
+
+        <!-- cores -->
+         <h2>Seletor de cores</h2>
+         <input type="color" name="cor" id="caixa-cor" />
+
+         <!-- caixa de seleção -->
+          <label for=""> Selecione seu curso</label>
+          <br>
+          <input type="radio" name="Cursoescolhido" id="TI">T.i
+            <input type="radio" name="Cursoescolhido" id="Design">Design
+                 <input type="radio" name="Cursoescolhido" id="Jogos"> Jogos    
+        <br><br>
+                <!-- caixinha - usado para selecionar várias opções -->
+                <label for="">Selecione quais redes sociais você utiliza:</label>
+                <br>
+                <input type="checkbox" name="Feicibuki" id="facebook"> Facebook
+                <input type="checkbox" name="X" id="twitter"> Twitter
+                <input type="checkbox" name="insta" id="instagram"> Instagram
+                <br><br>
+
+                <!-- caixa de seleção -->
+                <label for="">Selecione sua cidade: </label>
+                <select name="caixa-selecao" id="caixa-selecao">
+                    <option value="">Selecione</option>
+                    <option value="sao-paulo">São Paulo</option>
+                    <option value="rio-de-janeiro">Rio de Janeiro</option>
+                    <option value="salvador">Salvador</option>
+                        <option value="sao-paulo">São Paulo</option>
+                    </optgroup>
+                </select>
+                <!-- RESET -->
+                 <INPUt type="reset" value="resetar"></INPUt>
+            </body>
+</html>
+  </body> 
+
+</html>
