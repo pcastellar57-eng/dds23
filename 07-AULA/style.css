@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+#topo{
+    background-color: #333;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+    
+}
+
+.descricao{
+    font-style: italic;
+
+}
+
+.bloco{
+    background-color: #fff;
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+} 
+
+.destaque{
+    background-color: gold[];
+
+}
+.texto-destaque */
+{
+    font-weight: bold;
+    color: red;
+}
+
+#caixa-unica{
+    background-color: lightblue;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Seleciona todo o p que esteja dentro de uma div*/
+div p{
+    color: green;
+
+}
+/* Seleciona todo o p que seja filho direto de uma class específica*/
+.pai-direto > p{
+    color: blue;
+    padding: 5px;
+}
